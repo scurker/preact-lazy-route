@@ -4,7 +4,7 @@
 [![travis-ci](https://travis-ci.org/scurker/preact-lazy-route.svg)](https://travis-ci.org/scurker/preact-lazy-route)
 [![coveralls](https://coveralls.io/repos/github/scurker/preact-lazy-route/badge.svg?branch=master)](https://coveralls.io/github/scurker/preact-lazy-route?branch=master)
 
-`preact-lazy-route` is a component built for [preact-router](https://github.com/developit/preact-router). Using `preact-lazy-route` in combination with a module bundler such as [webpack](https://webpack.github.io/), allows you to implement code splitting on routes with the option do server side rendering in your preact application.
+`preact-lazy-route` is a component built for [preact-router](https://github.com/developit/preact-router). Using `preact-lazy-route` in combination with a module bundler such as [webpack](https://webpack.github.io/), allows you to implement code splitting on routes with the option to perform server side rendering in your preact application.
 
 ## Install
 

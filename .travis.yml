@@ -3,7 +3,7 @@ sudo: false
 node_js:
   - node
 cache: yarn
-before install:
+before_install:
   - npm install -g coveralls
 script:
   - npm run build

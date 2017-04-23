@@ -6,8 +6,8 @@
   "module": "dist/index.es2015.js",
   "scripts": {
     "test": "BABEL_ENV=test mocha --compilers .:babel-register --slow 200 test/*.js",
-    "lint": "eslint .",
-    "coverage": "BABEL_ENV=test nyc --reporter=lcov --print summary mocha --compilers .:babel-register test/*.js",
+    "lint": "eslint . --ext .js,.jsx",
+    "coverage": "nyc --extension .jsx --require babel-register npm run test",
     "build": "rollup -c",
     "prepublish": "npm run build"
   },

@@ -1,0 +1,54 @@
+{
+  "name": "preact-lazy-route",
+  "version": "1.0.0-prerelease",
+  "description": "Lazy load preact route components",
+  "main": "dist/index.js",
+  "module": "dist/index.es2015.js",
+  "scripts": {
+    "test": "BABEL_ENV=test mocha --compilers .:babel-register --slow 200 test/*.js",
+    "lint": "eslint .",
+    "coverage": "nyc --reporter=lcov --print summary npm run test",
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "preact",
+    "preact-router",
+    "preact-component",
+    "preact-lazy-route",
+    "route",
+    "lazy-route",
+    "lazy-load",
+    "code-splitting"
+  ],
+  "author": "Jason Wilson <jason@scurker.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "preact": "*"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
+    "istanbul": "^0.4.5",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.2.0",
+    "preact": "^8.1.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "bugs": {
+    "url": "https://github.com/scurker/preact-lazy-route/issues"
+  },
+  "homepage": "https://github.com/scurker/preact-lazy-route",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scurker/preact-lazy-route.git"
+  }
+}

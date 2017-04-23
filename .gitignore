@@ -1,0 +1,10 @@
+.DS_store
+node_modules
+*.sublime-project
+*.sublime-workspace
+.idea
+.vscode
+npm-debug.log
+dist
+.nyc_output
+coverage

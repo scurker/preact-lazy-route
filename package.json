@@ -7,7 +7,7 @@
   "scripts": {
     "test": "BABEL_ENV=test mocha --compilers .:babel-register --slow 200 test/*.js",
     "lint": "eslint .",
-    "coverage": "nyc --reporter=lcov --print summary npm run test",
+    "coverage": "BABEL_ENV=test nyc --reporter=lcov --print summary mocha --compilers .:babel-register test/*.js",
     "build": "rollup -c",
     "prepublish": "npm run build"
   },

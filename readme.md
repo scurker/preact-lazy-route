@@ -32,7 +32,7 @@ render(<App />, document.body);
 
 ### Loading Fallback
 
-You can provide a loading component to be displayed while your component is being fetched.
+You can provide an optional loading component to be displayed while your component is being fetched.
 
 ```js
 <LazyRoute path="/"
@@ -42,7 +42,7 @@ You can provide a loading component to be displayed while your component is bein
 
 ### Server Side Rendering
 
-`preact-lazy-route` also allows for you to define a server side rendering path:
+`preact-lazy-route` also allows for you to define an optional server side rendering path:
 
 ```js
 import path from 'path';
@@ -55,7 +55,7 @@ import path from 'path';
     useSsr={!process.env.BROWSER} />
 ```
 
-You will need to set `useSsr` to `true` when rendering on the server. You can either use some environment variable in your node process or use webpack's [define plugin](https://webpack.js.org/plugins) to set a variable when bundling in webpack.
+You will need to set `useSsr` to `true` when rendering on the server by setting an environment variable in your node process or using webpack's [define plugin](https://webpack.js.org/plugins) for your webpack bundle.
 
 #### Node Environment
 

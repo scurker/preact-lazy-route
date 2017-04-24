@@ -47,4 +47,16 @@ describe('preact-lazy-route', () => {
     }, 50);
   });
 
+  it('should not expose internal props to component', done => {
+    let componentWithProps = (props) => {
+      assert(Object.keys(props).indexOf(['component', 'loading', 'useSsr', 'ssrPath']) === -1);
+      assert.ok(props.path);
+      return null;
+    };
+    render(<LazyRoute path="/path" component={() => Promise.resolve({ default: componentWithProps })} useSsr={false} loading={LoadingComponent} ssrPath="../" />, document.body);
+    setTimeout(() => {
+      done();
+    }, 1);
+  });
+
 });

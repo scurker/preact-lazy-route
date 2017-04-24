@@ -1,6 +1,6 @@
-import { jsdom } from 'jsdom';
+import { JSDOM } from 'jsdom';
 
-const dom = jsdom('<!doctype html><html><body></body></html>');
+const { window } = new JSDOM('<!doctype html><html><body></body></html>');
 
-global.document = dom;
-global.window = dom.defaultView;
+global.document = window.document;
+global.window = window;

@@ -1,6 +1,6 @@
 {
   "name": "preact-lazy-route",
-  "version": "1.0.0-prerelease",
+  "version": "1.0.0",
   "description": "Lazy load preact route components",
   "main": "dist/index.js",
   "module": "dist/index.es2015.js",
@@ -10,7 +10,7 @@
     "coverage": "nyc --reporter lcov --reporter text --extension .jsx --require babel-register npm run test",
     "build": "rollup -c",
     "prepublish": "npm run build && npm run test",
-    "release": "npm run -s build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+    "release": "npm run -s build && git commit -am v$npm_package_version && git tag v$npm_package_version && git push && git push --tags && npm publish"
   },
   "files": [
     "dist"

@@ -1,5 +1,7 @@
 # preact-lazy-route
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/scurker/preact-lazy-route.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/preact-lazy-route.svg?style=flat)](https://www.npmjs.com/package/preact-lazy-route)
 [![travis-ci](https://travis-ci.org/scurker/preact-lazy-route.svg)](https://travis-ci.org/scurker/preact-lazy-route)
 [![coveralls](https://coveralls.io/repos/github/scurker/preact-lazy-route/badge.svg?branch=master)](https://coveralls.io/github/scurker/preact-lazy-route?branch=master)

@@ -42,7 +42,7 @@
     "nyc": "^11.0.2",
     "preact": "^8.1.0",
     "rollup": "^0.59.0",
-    "rollup-plugin-babel": "^3.0.1"
+    "rollup-plugin-babel": "^4.3.0"
   },
   "bugs": {
     "url": "https://github.com/scurker/preact-lazy-route/issues"
